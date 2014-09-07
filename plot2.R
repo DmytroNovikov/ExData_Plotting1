@@ -23,7 +23,7 @@ plot2 <- function(){
     #
     # Making plot
     #
-    plot(epcData$Date$Date, epcData$Date$Global_active_power, type = "l",
+    plot(epcData$Date, epcData$Global_active_power, type = "l",
          xlab = "",
          ylab = "Global Active Power (kilowatts)")
     dev.off()
