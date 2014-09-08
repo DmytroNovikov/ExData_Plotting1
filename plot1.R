@@ -1,7 +1,6 @@
-library(data.table)
-library(dplyr)
-
 plot1 <- function(){
+    library(data.table)
+    library(dplyr)
     #
     # This block of code is for reading and converting data
     #
@@ -21,6 +20,7 @@ plot1 <- function(){
     #
     # Making plot
     #
+    par(bg = "transparent")
     hist(epcData$Global_active_power,
          col = "red", 
          main = "Global Active Power",

@@ -1,8 +1,8 @@
-library(data.table)
-library(dplyr)
-library(lubridate)
-
 plot3 <- function(){
+    library(data.table)
+    library(dplyr)
+    library(lubridate)
+
     #
     # This block of code is for reading and converting data
     #
@@ -25,6 +25,7 @@ plot3 <- function(){
     #
     # Making plot
     #
+    par(bg = "transparent")
     plot(epcData$Date, epcData$Sub_metering_1, type = "l",
          col = "black",
          xlab = "",

@@ -1,8 +1,8 @@
-library(data.table)
-library(dplyr)
-library(lubridate)
-
 plot2 <- function(){
+    library(data.table)
+    library(dplyr)
+    library(lubridate)
+
     #
     # This block of code is for reading and converting data
     #
@@ -23,6 +23,7 @@ plot2 <- function(){
     #
     # Making plot
     #
+    par(bg = "transparent")
     plot(epcData$Date, epcData$Global_active_power, type = "l",
          xlab = "",
          ylab = "Global Active Power (kilowatts)")
